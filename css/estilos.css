@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.t {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition:all 2s;
+
+}
+
+.t:hover {
+    /*transform: translate(300px) rotate(45deg) scale(1.5);*/
+    width: 300px;
+    background: blue;
+}
+
+a {
+    display: inline-block;
+    padding: 10px;
+    background: tomato;
+    color: aliceblue;
+    border-radius: 3px;
+    margin: 10px;
+    transition: background 1s, scale(1.1);
+}
+
+a:hover {
+    color:black;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    box-shadow: 0px 0px 5px cyan;
+}
+
+@keyframes rotarycambiardecolor {
+0% {
+    transform: rotate(0);
+    background: green;
+}
+
+25% {
+    transform: rotate(70deg);
+    background:pink;
+}
+
+75% {
+    transform: rotate(20deg);
+    background: lime;
+}
+
+100% {
+    transform: rotate(0);
+    background: green;
+}
+}
+
+
+.animar {
+    width: 150px;
+    height: 150px;
+    background: green;
+
+    animation-name: rotarycambiardecolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+
+}
